@@ -28,3 +28,16 @@ military_map_mobile/
 ├── assets/
 │   └── map.html
 ├── buildozer.spec
+
+📱 iOS 対応について
+Mac 環境が必要
+
+kivy-ios を使用
+
+Google Maps JavaScript API を WebView に埋め込むのが無難
+
+✅ アーキテクチャ選択肢
+方法・利点・欠点
+Kivy + Static Maps	軽い・簡単	画像のみで制限あり
+Kivy + WebView + JS	リッチ機能・Google Maps動作可	Android/iOS連携が少し手間
+BeeWare, Flutter, React Native + Python連携	より洗練されたUIが可能	Python以外を併用
